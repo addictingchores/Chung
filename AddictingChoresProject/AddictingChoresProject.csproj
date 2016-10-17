@@ -127,10 +127,18 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\ChildController.cs" />
+    <Compile Include="Controllers\ChoreController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\RewardController.cs" />
+    <Compile Include="DAL\AddictingChoresContext.cs" />
+    <Compile Include="DAL\AddictingChoresInitializer.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Child.cs" />
+    <Compile Include="Models\Chore.cs" />
+    <Compile Include="Models\Reward.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -952,7 +960,9 @@
     <Content Include="Scripts\respond.matchmedia.addListener.min.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -967,10 +977,25 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Scripts\version.json" />
+    <Content Include="Views\Child\Create.cshtml" />
+    <Content Include="Views\Child\Delete.cshtml" />
+    <Content Include="Views\Child\Details.cshtml" />
+    <Content Include="Views\Child\Edit.cshtml" />
+    <Content Include="Views\Child\Index.cshtml" />
+    <Content Include="Views\Chore\Create.cshtml" />
+    <Content Include="Views\Chore\Delete.cshtml" />
+    <Content Include="Views\Chore\Details.cshtml" />
+    <Content Include="Views\Chore\Edit.cshtml" />
+    <Content Include="Views\Chore\Index.cshtml" />
+    <Content Include="Views\Reward\Create.cshtml" />
+    <Content Include="Views\Reward\Delete.cshtml" />
+    <Content Include="Views\Reward\Details.cshtml" />
+    <Content Include="Views\Reward\Edit.cshtml" />
+    <Content Include="Views\Reward\Index.cshtml" />
+    <Content Include="Views\Home\Documents.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

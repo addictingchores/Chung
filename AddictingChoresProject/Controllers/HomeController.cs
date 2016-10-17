@@ -26,5 +26,11 @@ namespace AddictingChoresProject.Controllers
 
             return View();
         }
+        public ActionResult Documents()
+        {
+            ViewBag.Message = "Your document page.";
+
+            return View();
+        }
     }
 }

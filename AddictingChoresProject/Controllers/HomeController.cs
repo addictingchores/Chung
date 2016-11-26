@@ -32,5 +32,11 @@ namespace AddictingChoresProject.Controllers
 
             return View();
         }
+        public ActionResult Register()
+        {
+            ViewBag.Message = "Registration.";
+
+            return View();
+        }
     }
 }
